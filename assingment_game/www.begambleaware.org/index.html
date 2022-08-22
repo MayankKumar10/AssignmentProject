@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+
+<!-- Mirrored from www.begambleaware.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 17:19:38 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"601297692",accountID:"3391015",trustKey:"2885932",xpid:"VwUOUFZSDRAFVVVUBggEUlw=",licenseKey:"NRJS-f5c5a9790d5c1568162",applicationID:"514619348"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(31),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(32),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(32),a=t(31);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(31),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(28),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=t(25).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;if("string"==typeof i?n=i:"object"==typeof i&&i instanceof y?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n),"data"!==this.params.protocol){var s=(""+(i&&i instanceof y&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("index.html")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(31),s=t(32),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(33);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var o=[r],i=a({});i&&o.push(i),l("lcp",o)}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,l("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),l("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,p,l=t("handle"),h=t("loader"),m=t(30),v=t(23),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(o);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}p=new PerformanceObserver(i);try{p.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],28:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(t)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],29:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],30:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],31:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],32:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],33:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(31),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===m.readyState&&i()}function i(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(26),s=t("handle"),c=t(31),f=t("ee"),u=t(29),d=t(21),p=t(23),l=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(20),t(27),m[v]?(m[v]("DOMContentLoaded",i,p(!1)),h[v]("load",r,p(!1))):(m[w]("onreadystatechange",o),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(32),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);</script>
+<link rel="canonical" href="index.html" />
+<link rel="shortlink" href="index.html" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>window.euCookieComplianceLoadScripts = function(category) {var scriptTag = document.createElement("script");scriptTag.src = "\/sites\/default\/files\/google_tag\/live\/google_tag.script.js";document.body.appendChild(scriptTag);}</script>
+<style>div#sliding-popup, div#sliding-popup .eu-cookie-withdraw-banner, .eu-cookie-withdraw-tab {background: #1a1f41} div#sliding-popup.eu-cookie-withdraw-wrapper { background: transparent; } #sliding-popup h1, #sliding-popup h2, #sliding-popup h3, #sliding-popup p, #sliding-popup label, #sliding-popup div, .eu-cookie-compliance-more-button, .eu-cookie-compliance-secondary-button, .eu-cookie-withdraw-tab { color: #ffffff;} .eu-cookie-withdraw-tab { border-color: #ffffff;}</style>
+<link rel="icon" href="themes/custom/begambleaware/favicon.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="index.html" />
+<script src="sites/default/files/google_tag/google_tag/live/google_tag.script5eab.js?rd4c4r" defer></script>
+
+  <title>BeGambleAware®: Gambling Help &amp; Gambling Addiction | BeGambleAware</title>
+  <link rel="stylesheet" media="all" href="sites/default/files/css/css_7t9WFU1Copwxe_gQt0lEexGTTh7FlEAdIdcuHwLgsiQ.css" />
+<link rel="stylesheet" media="all" href="sites/default/files/css/css_3elvQkc9sAOkA3BKDj0dPtpYtjjfmHs2wQdMDIW-3yo.css" />
+
+  
+</head>
+<body class="path-frontpage page-node-type-landing-page">
+<a href="#main-content" class="visually-hidden focusable">
+  Skip to main content
+</a>
+<noscript aria-hidden="true"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WGFWJB5&amp;gtm_auth=dzf89ser6wq991KuErLcqA&amp;gtm_preview=env-2&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+<header  class="layout__top">
+            
+<div id="site-header" >
+  <div>
+    <header  class="site-header">
+        <div  class="site-header__inner">
+          <div  class="site-header__hamburger">
+            <button class="hamburger hamburger--squeeze" id="hamburger" data-toggler="is-active" type="button" data-toggle="drawer-menu hamburger">
+              <span class="hamburger-box">
+                <span class="hamburger-inner">
+
+                </span>
+              </span>
+            </button>
+          </div>
+          <div  class="site-header__menu" id="drawer-menu" data-toggler=".site-header__menu--visible">
+            <div  class="site-header__menu-inner" >
+                  <div class="hide-for-medium">
+    
+
+<div class="utils-search-form utils-search-form--utils-search-form--2 block block-ga-utils block-utils-search-form-block" data-drupal-selector="utils-search-form-2" id="block-searchformblockmobile" data-block-plugin-id="utils_search_form_block">
+  
+    
+      <form region="main_navigation" action="https://www.begambleaware.org/" method="post" id="utils-search-form--2" accept-charset="UTF-8">
+  
+
+<div class="js-form-item form-item js-form-type-textfield form-item--keywords js-form-item--keywords form-no-label"  >
+          <input data-drupal-selector="edit-keywords" type="text" id="edit-keywords--3" name="keywords" value="" size="25" maxlength="255" placeholder="Search" class="form-text" />
+
+    
+      </div>
+<span class="search-close-button" aria-label="Close the search bar"></span><input data-drupal-selector="edit-submit" type="submit" id="edit-submit--3" name="op" value="Search" class="button js-form-submit form-submit" />
+<input autocomplete="off" data-drupal-selector="form-dmi9p65hb8k2he2go80d3sqxjpvaaorvog0juzcqlg0" type="hidden" name="form_build_id" value="form-DMi9P65hB8k2He2go80d3sQxjpvAAorVOg0jUzCQLG0" />
+<input data-drupal-selector="edit-utils-search-form-2" type="hidden" name="form_id" value="utils_search_form" />
+
+</form>
+
+  </div>
+
+  </div>
+        <nav role="navigation" aria-labelledby="block-begambleaware-main-menu-menu" id="block-begambleaware-main-menu" data-block-plugin-id="system_menu_block:main">
+            
+  <h2 class="visually-hidden" id="block-begambleaware-main-menu-menu">Main navigation</h2>
+  
+
+          <div id="main-nav" class="main-nav">
+    
+
+
+    
+                              
+<ul  region="main_navigation" class="vertical menu accordion-menu" data-accordion-menu data-multi-open=false>
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="#">How to help yourself</a>
+                
+                                        
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="#" class="link label label--bulleted label--light teal">Advice</a>
+                
+                              
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1 vertical menu accordion-menu--sub-2" >
+      
+                    
+      
+      
+<li
+    >
+
+              <a href="advice-for-safer-gambling.html" data-drupal-link-system-path="node/578">Advice for safer gambling</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="understanding-risks-gambling.html" data-drupal-link-system-path="node/793">Understanding the risks of gambling</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="#" class="link label label--bulleted label--light purple">Self-assessment tests</a>
+                
+                              
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1 vertical menu accordion-menu--sub-2" >
+      
+                    
+      
+      
+<li
+    >
+
+              <a href="how-much-do-you-spend.html" data-drupal-link-system-path="node/698">How much do you spend?</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="do-i-have-gambling-problem.html" data-drupal-link-system-path="node/705">Do I have a gambling problem?</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="#" class="link label label--bulleted label--light fuchsia">Tools</a>
+                
+                              
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1 vertical menu accordion-menu--sub-2" >
+      
+                    
+      
+      
+<li
+    >
+
+              <a href="help-with-budgeting-and-spending-control.html" data-drupal-link-system-path="node/113">Help with budgeting and spending control</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="self-exclusion.html" data-drupal-link-system-path="node/116">Self-exclusion</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="gambling-blocking-software.html" data-drupal-link-system-path="node/115">Gambling blocking software</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="limiting-gambling-ads-online.html" data-drupal-link-system-path="node/117">Limiting gambling ads online</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="helping-gamblers.html" data-drupal-link-system-path="node/18">How to help someone who gambles</a>
+                
+                                        
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="helping-gamblers.html" data-drupal-link-system-path="node/18">Helping someone who gambles</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="#" class="link label label--bulleted label—light purple">How to help a gambler</a>
+                
+                              
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1 vertical menu accordion-menu--sub-2" >
+      
+                    
+      
+      
+<li
+    >
+
+              <a href="how-help-friend.html" data-drupal-link-system-path="node/226">How to help a friend</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="how-help-loved-one.html" data-drupal-link-system-path="node/227">How to help a loved one</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="helping-young-person.html" data-drupal-link-system-path="node/228">How to help a young person</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="#" class="link label label--bulleted label--light teal ">Affected by someone else&#039;s gambling?</a>
+                
+                              
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1 vertical menu accordion-menu--sub-2" >
+      
+                    
+      
+      
+<li
+    >
+
+              <a href="looking-out-for-you.html" data-drupal-link-system-path="node/225">Looking out for you</a>
+        
+</li>
+    
+                    
+      
+      
+<li
+    >
+
+              <a href="understanding-someone-who-gambles.html" data-drupal-link-system-path="node/317">Understanding someone who gambles</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="finding-the-right-support.html" data-drupal-link-system-path="node/32">Finding the right support</a>
+                
+                                        
+<ul  class="vertical menu accordion-menu vertical menu accordion-menu--sub vertical menu accordion-menu--sub-1" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="finding-the-right-support.html" data-drupal-link-system-path="node/32">Support options</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="support-other-languages.html" data-drupal-link-system-path="node/118">Support in other languages</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="types-support-help-gambling.html" data-drupal-link-system-path="node/798">Types of support to help with gambling</a>
+        
+</li>
+      </ul>
+  
+  
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="ngts.html" data-drupal-link-system-path="node/396">National Gambling Treatment Service</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="covid-19-and-gambling.html" data-drupal-link-system-path="node/120">Support during Covid-19</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="betregret.html" data-drupal-link-system-path="node/79">Bet Regret</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="advice-tools-support.html" data-drupal-link-system-path="node/778">Women&#039;s Campaign</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="news.html" data-drupal-link-system-path="node/55">News</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="for-professionals/donate.html" data-drupal-link-system-path="node/2">Donate</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="about-us.html" data-drupal-link-system-path="node/141">About us</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="index.html" data-drupal-link-system-path="&lt;front&gt;" class="is-active">Home</a>
+        
+</li>
+      </ul>
+  
+  </div>
+
+  </nav>
+
+    <div class="hide-for-xlarge">
+      <nav role="navigation" aria-labelledby="block-professionalmenuforregularusers-menu" id="block-professionalmenuforregularusers" data-block-plugin-id="system_menu_block:pro-menu-for-regular-users">
+            
+  <h2 class="visually-hidden" id="block-professionalmenuforregularusers-menu">Professional menu for regular users</h2>
+  
+
+        <div class="pro-menu__outer">
+  <span class="pro-menu__subtitle">More resources</span>
+  
+
+
+    
+                              
+<ul  region="main_navigation" class="menu pro-menu" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="for-professionals.html" data-drupal-link-system-path="node/1">For professionals</a>
+        
+</li>
+      </ul>
+  
+</div>
+
+  </nav>
+
+    </div>
+
+  
+
+              <div  class="site-header__menu-bottom" >
+                  <nav role="navigation" aria-labelledby="block-footer-in-header-menu" id="block-footer-in-header" data-block-plugin-id="system_menu_block:footer">
+            
+  <h2 class="visually-hidden" id="block-footer-in-header-menu">Footer menu in header</h2>
+  
+
+        
+
+
+    
+                              
+<ul  region="main_navigation" class="vertical menu xmedium-horizontal" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="contact-us.html" data-drupal-link-system-path="node/76">Contact</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="terms-of-use.html" data-drupal-link-system-path="node/449">Terms &amp; Conditions</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="acceptable-use-policy.html" data-drupal-link-system-path="node/451">Acceptable Use Policy</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="privacy-policy.html" data-drupal-link-system-path="node/454">Privacy Policy</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="cookie-policy.html" data-drupal-link-system-path="node/455">Cookie Policy</a>
+        
+</li>
+      </ul>
+  
+
+  </nav>
+
+  
+
+<div id="block-footer-social-icons-in-header" data-block-plugin-id="block_content:3e76e9d1-af49-49c1-829b-99ba2444c3f6" class="block block-block-content block-block-content3e76e9d1-af49-49c1-829b-99ba2444c3f6">
+  
+    
+      
+<ul  class="menu social-menu">
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../twitter.com/begambleaware.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/twitter_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../www.facebook.com/BeGambleAware/index.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/facebook_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../www.instagram.com/begambleawaregb/index.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/instagram_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+</ul>
+
+  </div>
+
+              </div>
+            </div>
+          </div>
+          <div  class="site-header__left">
+              
+
+<div id="block-begambleaware-branding" data-block-plugin-id="system_branding_block" class="block block-system block-system-branding-block">
+  
+    
+        <a href="index.html" rel="home">
+      <img src="themes/custom/begambleaware/logo.svg" alt="Home" />
+    </a>
+      
+</div>
+
+          </div>
+          <div  class="site-header__center">
+              
+
+<div id="block-getfreehelpbutton" data-block-plugin-id="block_content:9784ca54-059a-4fd2-b3e3-31d9dc0999fe" class="block block-block-content block-block-content9784ca54-059a-4fd2-b3e3-31d9dc0999fe">
+  
+    
+    
+
+
+<div  id="block-getfreehelpbutton" data-block-plugin-id="block_content:9784ca54-059a-4fd2-b3e3-31d9dc0999fe" class="help-panel help-panel-- block block-block-content block-block-content9784ca54-059a-4fd2-b3e3-31d9dc0999fe" id="help-panel" data-toggler=".show">
+  <div  class="help-panel__trigger help-panel__trigger-- hide-for-xmedium" >
+  
+
+
+  
+<a   target='_blank'  href="https://www.gamcare.org.uk/get-support/talk-to-us-now/"   class="button button-- small purple" aria-label="button" data-toggle=help-panel>
+      
+            <div class="field field--name-field-gfhb-button-text field--type-string field--label-hidden field__item">Get free help</div>
+      
+  </a>
+  </div>
+  <div  class="help-panel__dropdown help-panel__dropdown--" >
+    <span  class="help-panel__copy help-panel__copy--">
+      Freephone 24-7  National Gambling Helpline :
+    </span>
+    <span  class="help-panel__buttons help-panel__buttons--">
+      <span  class="help-panel__phone-button help-panel__phone-button--">
+        
+  
+<a  class="button button--alt" href="tel:+448088020133">
+0808 8020 133</a>
+      </span>
+      <span  class="help-panel__chat-button help-panel__chat-button--">
+          
+  
+<a  class="button button--alt"target="_blank"  href="https://www.gamcare.org.uk/get-support/talk-to-us-now/">
+Live Chat</a>
+      </span>
+    </span>
+    <span  class="help-panel__triangle help-panel__triangle--">
+    </span>
+
+  </div>
+
+</div>
+
+</div>
+
+          </div>
+          <div  class="site-header__right">
+              
+  <div class="show-for-xlarge">
+    <nav role="navigation" aria-labelledby="block-professionalmenuforregularusers-menu" id="block-professionalmenuforregularusers" data-block-plugin-id="system_menu_block:pro-menu-for-regular-users">
+            
+  <h2 class="visually-hidden" id="block-professionalmenuforregularusers-menu">Professional menu for regular users</h2>
+  
+
+        <div class="pro-menu__outer">
+  <span class="pro-menu__subtitle">More resources</span>
+  
+
+
+    
+                              
+<ul  region="main_navigation" class="menu pro-menu" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="for-professionals.html" data-drupal-link-system-path="node/1">For professionals</a>
+        
+</li>
+      </ul>
+  
+</div>
+
+  </nav>
+
+  </div>
+
+  <div class="site-header__search show-for-xlarge">
+          <input type="checkbox" name="toggle" id="toggle">
+      <label for="toggle" class="label toggle toggle--navbar">
+        <span class="icon"></span>Search
+      </label>
+      
+
+<div class="utils-search-form utils-search-form--utils-search-form block block-ga-utils block-utils-search-form-block" data-drupal-selector="utils-search-form" id="block-searchformblock" data-block-plugin-id="utils_search_form_block">
+  
+    
+      <form region="main_navigation" action="https://www.begambleaware.org/" method="post" id="utils-search-form" accept-charset="UTF-8">
+  
+
+<div class="js-form-item form-item js-form-type-textfield form-item--keywords js-form-item--keywords form-no-label"  >
+          <input data-drupal-selector="edit-keywords" type="text" id="edit-keywords" name="keywords" value="" size="25" maxlength="255" placeholder="Search" class="form-text" />
+
+    
+      </div>
+<span class="search-close-button" aria-label="Close the search bar"></span><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit" />
+<input autocomplete="off" data-drupal-selector="form-vanw2nlza7ednivqrohd82x4pokrmbigl3dhjqu1eju" type="hidden" name="form_build_id" value="form-Vanw2nLzA7EdnIVqROHd82X4pOkRMbigL3dhJqU1EJU" />
+<input data-drupal-selector="edit-utils-search-form" type="hidden" name="form_id" value="utils_search_form" />
+
+</form>
+
+  </div>
+
+      </div>
+          </div>
+        </div>
+    </header>
+  </div>
+</div>
+
+      </header>
+
+
+
+<div  class="layout__main">
+
+      
+    
+    
+    
+  
+  <div id="main-content">
+    <main role="main"  class="main-content">
+            <div>
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+
+<div id="block-begambleaware-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      <article role="article" about="/begambleawarer-gambling-help-gambling-addiction" class="node node--type-landing-page node--view-mode-full landing-page">
+
+  
+
+    
+
+      <div>
+        <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+
+<div class="block block-layout-builder block-inline-blockfancy-hero" data-block-plugin-id="inline_block:fancy_hero" data-inline-block-uuid="0f468682-11ad-47c9-a217-2bc718348226">
+  
+    
+    
+  
+
+<div  data-block-plugin-id="inline_block:fancy_hero" data-inline-block-uuid="0f468682-11ad-47c9-a217-2bc718348226" class="hero hero--light block block-layout-builder block-inline-blockfancy-hero">
+  <div  class="hero__inner">
+  <div  class="hero__container">
+
+    <div  class="hero__image hero__image--">
+    
+<div  class="circle-image circle-image--">
+                  
+            <div class="field field--name-field-fh-featured-image field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/styles/fancy_hero_feature_image/public/2020-12/GA%20Still%2013868c.png?itok=L0b7Negp" width="517" height="517" loading="lazy" typeof="foaf:Image" />
+
+
+</div>
+      
+  </article>
+</div>
+      
+    
+      
+  
+    <div  class="badge-ngts">
+              <a href="ngts.html"><img src="themes/custom/begambleaware/images/NGTS-logo-3.png" alt="NGTS"></a>
+            </div>
+
+        
+          <img  class="circle-image circle-image--scratch circle-image--scratch-orange-top" src="themes/custom/begambleaware/images/circle-image/circle-image-orange-top.png" alt=scratch-top>
+    
+          <img  class="circle-image circle-image--scratch circle-image--scratch-orange-bottom" src="themes/custom/begambleaware/images/circle-image/circle-image-orange-bottom.png" alt=scratch-bottom>
+    
+  
+  </div>
+    </div>
+
+  <div  class="hero__content">
+          
+<h1  class="hero__subheading hero__subheading--">
+      If gambling’s on your mind, we’re here to help
+  </h1>
+                  
+<p  class="body-large body-large--">
+      We offer free, confidential help and support to anyone who’s worried about their – or someone else’s – gambling. 
+  </p>
+              <div  class="hero__cta-wrapper">
+        
+  
+<a  class="button button--alt button--large" href="ngts.html">
+I need to talk to someone </a>
+      </div>
+              <div  class="hero__footer">
+        <img src="themes/custom/begambleaware/images/NGTS-logo.png" alt="NGTS logo">
+
+        
+<p  class="body-small body-small--">
+      Support provided by the National Gambling Treatment Service
+  </p>
+      </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+  </div>
+
+
+<div data-block-plugin-id="inline_block:fancy_hero" data-inline-block-uuid="5c088d9b-b782-4342-99e8-1e351d79db95" class="block block-layout-builder block-inline-blockfancy-hero">
+  
+    
+    
+  
+
+<div  data-block-plugin-id="inline_block:fancy_hero" data-inline-block-uuid="5c088d9b-b782-4342-99e8-1e351d79db95" class="hero hero--dark block block-layout-builder block-inline-blockfancy-hero">
+  <div  class="hero__inner">
+  <div  class="hero__container">
+
+    <div  class="hero__image hero__image--">
+    
+<div  class="circle-image circle-image--">
+                  
+            <div class="field field--name-field-fh-featured-image field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/styles/fancy_hero_feature_image/public/2022-01/GambleAware_Juggling_1080x1080_InterscrollerCircle%5b4%5d0a17.png?itok=cxjNG3bq" width="517" height="517" alt="WP Campaign hero image" loading="lazy" typeof="foaf:Image" />
+
+
+</div>
+      
+  </article>
+</div>
+      
+    
+      
+            <img  class="circle-image circle-image--scratch circle-image--scratch-dark" src="themes/custom/begambleaware/images/circle-image/circle-image-dark-top.png" alt=>
+    
+  
+  </div>
+    </div>
+
+  <div  class="hero__content">
+          
+<h1  class="hero__subheading hero__subheading--">
+      Losing track of the world around you when you gamble? 
+  </h1>
+                  
+<p  class="body-large body-large--">
+      When playing online gambling games, it’s easy to lose track of time and money and get lost in the game. <br />
+<br />
+Check out our advice and support to stay in control of your gambling.<br />
+
+  </p>
+              <div  class="hero__cta-wrapper">
+        
+  
+<a  class="button button--alt button--large" href="advice-tools-support.html">
+Advice and support</a>
+      </div>
+          </div>
+  </div>
+  </div>
+</div>
+
+  </div>
+
+
+<div data-block-plugin-id="inline_block:journey_selector" data-inline-block-uuid="643b22e1-ad77-4a7e-bfa6-a74f13de21f2" class="block block-layout-builder block-inline-blockjourney-selector">
+  
+    
+  
+  
+
+          <img  data-block-plugin-id="inline_block:journey_selector" data-inline-block-uuid="643b22e1-ad77-4a7e-bfa6-a74f13de21f2" class="content-box-dark__scratch-top block block-layout-builder block-inline-blockjourney-selector" src="themes/custom/begambleaware/images/container/scratch-top-dark.png" alt=>
+    <div  class="content-box-dark content-box-dark--">
+  <div  class="content-box-dark__content">
+          <div class="global-container global-container--full-on-small padding-top-4 padding-bottom-6">
+        <h4>What would you like help with?</h4>
+        <div class="homepage-cards">
+    
+<h4  class="homepage-cards-container__heading homepage-cards-container__heading--">
+      
+  </h4>
+
+    <div class="homepage-cards-container">
+      
+          
+
+  <div  class="card-text card-text--green"  onclick="window.location.href='want-feel-more-control-your-gambling.html'" >
+    
+    
+<h4  class="card-text__heading card-text__heading--">
+      I’d like to feel more in control of my gambling
+  </h4>
+
+    
+<p  class="card-text__text card-text__text--">
+      See how others have gained control of their gambling and take our tests to get the tools that are right for you.
+  </p>
+
+          
+  
+<a  class="link link--arrow" href="want-feel-more-control-your-gambling.html">
+See more  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+      </div>
+
+          
+
+  <div  class="card-text card-text--purple"  onclick="window.location.href='worried-about-your-gambling.html'" >
+    
+    
+<h4  class="card-text__heading card-text__heading--">
+      I’m worried I might have a gambling problem 
+  </h4>
+
+    
+<p  class="card-text__text card-text__text--">
+      Find out if you have a gambling problem and see what others have done to overcome theirs. You can also access useful tools to help you feel in control again.
+  </p>
+
+          
+  
+<a  class="link link--arrow" href="worried-about-your-gambling.html">
+See more  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+      </div>
+
+          
+
+  <div  class="card-text card-text--pink"  onclick="window.location.href='i-want-help-someone-whos-gambling.html'" >
+    
+    
+<h4  class="card-text__heading card-text__heading--">
+      I want to help someone who’s gambling
+  </h4>
+
+    
+<p  class="card-text__text card-text__text--">
+      It can be hard to know what to say or do. Learn how to help someone who’s gambling and get support and advice so you can look out for you too. 
+  </p>
+
+          
+  
+<a  class="link link--arrow" href="i-want-help-someone-whos-gambling.html">
+See more  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+      </div>
+
+    
+  
+    </div>
+</div>
+
+
+      </div>
+      </div>
+</div>
+</div>
+<div  data-block-plugin-id="inline_block:case_study_carousel" data-inline-block-uuid="10104dc5-3e0d-461c-9ff1-0781708ddef0" class="block">
+  
+    
+      
+      
+
+<div  class="content-box content-box--blue-5">
+          <div class="padding-vertical-3">
+            <div class="global-container">
+              <h3>    
+            <div class="field field--name-field-csc-title field--type-string field--label-hidden field__item">Gambling stories</div>
+      </h3>
+            </div>
+          <div class="views-element-container"><div class="js-view-dom-id-c7a4be90e11545f04f9d1af1ef9933d78213007d92e83e31a30cbd4f8c987fa0">
+  
+  
+  
+
+  
+  
+  
+
+  
+
+
+
+<div  class="content-box content-box--blue-5">
+      <div class="padding-top-3">
+            
+
+<div  class="case-study-carousel case-study-carousel--">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+              
+
+<div  role="article" about="/case-study/bens-story" class="content-box content-box--shadow">
+  
+    <div  class="card card--"  onclick="window.location.href='case-study/bens-story.html'">
+                  <div  class="card__image card__image--">
+          
+    <img src="sites/default/files/styles/large/public/2020-12/Ben_1fb68.png?itok=CnfNbSyf" alt="" typeof="foaf:Image" />
+
+
+  
+
+                  
+
+
+  
+<button   class="button button--play" aria-label="button" >
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#triangle-white"></use>
+</svg>
+</button>
+              </div>
+            <div  class="card__content card__content--">
+                          
+          
+<h5  class="card__heading card__heading--">
+      
+  
+<a  class="card__heading-link" href="case-study/bens-story.html">
+<span>Ben&#039;s story</span>
+</a>
+  </h5>
+          
+                                  
+<p  class="card__body card__body--">
+      &quot;No one ever talks about losses. So, it&#039;s really hard to even know if someone&#039;s got a problem or not, because if you haven’t won for a while – you just won’t say anything...Hearing other people’s stories that are similar to mine kind of makes you think ‘Wait a minute’… you realise you’re not a million miles away from it.&quot;
+  </p>
+                                  
+  
+<a  class="link link--arrow" href="case-study/bens-story.html">
+Watch Ben&#039;s story  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+                              </div>
+    </div>
+  </div>
+
+
+            </div>
+                      <div class="swiper-slide">
+              
+
+<div  role="article" about="/case-study/minas-story" class="content-box content-box--shadow">
+  
+    <div  class="card card--"  onclick="window.location.href='case-study/minas-story.html'">
+                  <div  class="card__image card__image--">
+          
+    <img src="sites/default/files/styles/large/public/2020-12/Minad205.png?itok=MxOvXF75" alt="" typeof="foaf:Image" />
+
+
+  
+
+                  
+
+
+  
+<button   class="button button--play" aria-label="button" >
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#triangle-white"></use>
+</svg>
+</button>
+              </div>
+            <div  class="card__content card__content--">
+                          
+          
+<h5  class="card__heading card__heading--">
+      
+  
+<a  class="card__heading-link" href="case-study/minas-story.html">
+<span>Mina&#039;s story</span>
+</a>
+  </h5>
+          
+                                  
+<p  class="card__body card__body--">
+      &quot;I try and set myself limits to keep it under control. You can sit there and say you’re in control – but sometimes you’re not. Having a spend calculator is really helpful….it visually shows how much you’re spending. You can’t ignore it.&quot;
+  </p>
+                                  
+  
+<a  class="link link--arrow" href="case-study/minas-story.html">
+Watch Mina&#039;s story  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+                              </div>
+    </div>
+  </div>
+
+
+            </div>
+                      <div class="swiper-slide">
+              
+
+<div  role="article" about="/case-study/adams-story" class="content-box content-box--shadow">
+  
+    <div  class="card card--"  onclick="window.location.href='case-study/adams-story.html'">
+                  <div  class="card__image card__image--">
+          
+    <img src="sites/default/files/styles/large/public/2020-12/Adam_1cb38.png?itok=fpPR4poe" alt="" typeof="foaf:Image" />
+
+
+  
+
+                  
+
+
+  
+<button   class="button button--play" aria-label="button" >
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#triangle-white"></use>
+</svg>
+</button>
+              </div>
+            <div  class="card__content card__content--">
+                          
+          
+<h5  class="card__heading card__heading--">
+      
+  
+<a  class="card__heading-link" href="case-study/adams-story.html">
+<span>Adam&#039;s story</span>
+</a>
+  </h5>
+          
+                                  
+<p  class="card__body card__body--">
+      &quot;I never thought I had a problem. I didn&#039;t want to be seen like a gambler and addict. But they&#039;re all the things that I was...I think now knowing that I can pick up the phone to someone, or I could reach out to someone and get help straight away…it might have been easier.&quot;<br />
+<br />
+
+  </p>
+                                  
+  
+<a  class="link link--arrow" href="case-study/adams-story.html">
+Watch Adam&#039;s story  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+                              </div>
+    </div>
+  </div>
+
+
+            </div>
+                      <div class="swiper-slide">
+              
+
+<div  role="article" about="/case-study/dannis-story" class="content-box content-box--shadow">
+  
+    <div  class="card card--"  onclick="window.location.href='case-study/dannis-story.html'">
+                  <div  class="card__image card__image--">
+          
+    <img src="sites/default/files/styles/large/public/2020-12/Danni_19dab.png?itok=ha2-IBaz" alt="" typeof="foaf:Image" />
+
+
+  
+
+                  
+
+
+  
+<button   class="button button--play" aria-label="button" >
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#triangle-white"></use>
+</svg>
+</button>
+              </div>
+            <div  class="card__content card__content--">
+                          
+          
+<h5  class="card__heading card__heading--">
+      
+  
+<a  class="card__heading-link" href="case-study/dannis-story.html">
+<span>Danni&#039;s story</span>
+</a>
+  </h5>
+          
+                                  
+<p  class="card__body card__body--">
+      &quot;At first I wouldn’t say anything because actually... it&#039;s not really my place to say, it&#039;s not my money. Then I thought I could help him, but I realise now that&#039;s not the case and I should have looked after myself first… I still sometimes have to remember to do that.&quot;
+  </p>
+                                  
+  
+<a  class="link link--arrow" href="case-study/dannis-story.html">
+Watch Danni&#039;s story  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+                              </div>
+    </div>
+  </div>
+
+
+            </div>
+                      <div class="swiper-slide">
+              
+
+<div  role="article" about="/case-study/joannes-story" class="content-box content-box--shadow">
+  
+    <div  class="card card--"  onclick="window.location.href='case-study/joannes-story.html'">
+                  <div  class="card__image card__image--">
+          
+    <img src="sites/default/files/styles/large/public/2020-12/Joanne_1e630.png?itok=GEiCUA_J" alt="" typeof="foaf:Image" />
+
+
+  
+
+                  
+
+
+  
+<button   class="button button--play" aria-label="button" >
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#triangle-white"></use>
+</svg>
+</button>
+              </div>
+            <div  class="card__content card__content--">
+                          
+          
+<h5  class="card__heading card__heading--">
+      
+  
+<a  class="card__heading-link" href="case-study/joannes-story.html">
+<span>Joanne&#039;s story</span>
+</a>
+  </h5>
+          
+                                  
+<p  class="card__body card__body--">
+      &quot;I never talked about anything. I wish I had, just saying stuff out loud makes such a difference… I went to group meetings and the more I spoke about my story, the more open I was. And the more I was getting asked questions and getting more involved. It was that that helped me in my recovery.&quot;
+  </p>
+                                  
+  
+<a  class="link link--arrow" href="case-study/joannes-story.html">
+Watch Joanne&#039;s story  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+                              </div>
+    </div>
+  </div>
+
+
+            </div>
+                      </div>
+
+
+  </div>
+
+  
+<div  class="carousel-pager carousel-pager--">
+  <div  class="carousel-pager__nav carousel-pager__nav--prev">
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#chevron-white"></use>
+</svg>
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#chevron-orange"></use>
+</svg>
+  </div>
+  <div  class="carousel-pager__summary carousel-pager__summary--">
+    1 — 6
+  </div>
+  <div  class="carousel-pager__nav carousel-pager__nav--next">
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#chevron-white"></use>
+</svg>
+    
+
+
+<svg  class="icon icon--"
+
+  
+  
+  >
+      <use xlink:href="themes/custom/begambleaware/dist/icons.svg#chevron-orange"></use>
+</svg>
+  </div>
+</div>
+
+</div>
+    </div>
+  </div>
+
+
+
+    
+
+  
+  
+
+  
+  
+</div>
+</div>
+
+        </div>
+      </div>
+
+      </div>
+<div class="global-container--narrow">
+  
+
+<div data-block-plugin-id="inline_block:content_list_grid" data-inline-block-uuid="3f11bcdf-cada-43b6-8cf1-2181d482e6d8" class="block block-layout-builder block-inline-blockcontent-list-grid">
+  
+    
+        
+<div class="global-container--narrow">
+  
+
+
+
+<div  class="grid grid--separated grid--square">
+                <article role="article" about="/helping-gamblers" class="node node--type-section-landing node--view-mode-grid">
+
+  
+
+    
+
+ 
+    
+<div  role="article" about="/helping-gamblers" class="article-teaser article-teaser-- node node--type-section-landing node--view-mode-grid">
+  <div  class="article-teaser__content">
+              <div  class="label-list label-list--">
+              
+<div  class="label label--bulleted label--light teal">
+  <a href="tag/tips-and-advice.html" hreflang="en">Tips and advice</a>
+</div>
+      </div>
+
+                          
+<h4  class="heading heading--">
+      
+  
+<a  class="heading__link" href="helping-gamblers.html">
+<span>How to help someone who gambles</span>
+</a>
+  </h4>
+                  
+<p  class="paragraph paragraph--">
+      Want to help someone with a gambling problem but not sure what to do? Find practical advice and support services below. <br />
+
+  </p>
+            <div  class="article-teaser__footer">
+              <div  class="article-teaser__cta-wrapper">
+          
+  
+<a  class="link link--arrow" href="helping-gamblers.html">
+Find out now  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+        </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+</article>
+
+              <article role="article" about="/advice-for-safer-gambling" class="node node--type-section-landing node--view-mode-grid">
+
+  
+
+    
+
+ 
+    
+<div  role="article" about="/advice-for-safer-gambling" class="article-teaser article-teaser-- node node--type-section-landing node--view-mode-grid">
+  <div  class="article-teaser__content">
+              <div  class="label-list label-list--">
+              
+<div  class="label label--bulleted label--light teal">
+  <a href="tag/tips-and-advice.html" hreflang="en">Tips and advice</a>
+</div>
+      </div>
+
+                          
+<h4  class="heading heading--">
+      
+  
+<a  class="heading__link" href="advice-for-safer-gambling.html">
+<span>Advice for safer gambling</span>
+</a>
+  </h4>
+                  
+<p  class="paragraph paragraph--">
+      Some people gamble for fun and enjoyment. However, some people think of gambling as a way to make money, spend more than they can afford, or use gambling to distract themselves from everyday problems.
+  </p>
+            <div  class="article-teaser__footer">
+              <div  class="article-teaser__cta-wrapper">
+          
+  
+<a  class="link link--arrow" href="advice-for-safer-gambling.html">
+Find out now  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+        </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+</article>
+
+              <article role="article" about="/betregret" class="node node--type-landing-page node--view-mode-grid">
+
+  
+
+    
+
+ 
+    
+<div  role="article" about="/betregret" class="article-teaser article-teaser-- node node--type-landing-page node--view-mode-grid">
+  <div  class="article-teaser__content">
+              <div  class="label-list label-list--">
+              
+<div  class="label label--bulleted label--light orange">
+  <a href="tag/campaigns.html" hreflang="en">Campaigns</a>
+</div>
+      </div>
+
+                          
+<h4  class="heading heading--">
+      
+  
+<a  class="heading__link" href="betregret.html">
+<span>Bet Regret</span>
+</a>
+  </h4>
+                  
+<p  class="paragraph paragraph--">
+      Make it a habit to always tap out of your betting app before you place a bet, to give you some time to think it through and help you avoid Bet Regret.
+  </p>
+            <div  class="article-teaser__footer">
+              <div  class="article-teaser__cta-wrapper">
+          
+  
+<a  class="link link--arrow" href="betregret.html">
+Find out now  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+        </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+</article>
+
+              <article role="article" about="/covid-19-and-gambling" class="node node--type-section-landing node--view-mode-grid">
+
+  
+
+    
+
+ 
+    
+<div  role="article" about="/covid-19-and-gambling" class="article-teaser article-teaser-- node node--type-section-landing node--view-mode-grid">
+  <div  class="article-teaser__content">
+              <div  class="label-list label-list--">
+              
+<div  class="label label--bulleted label--light teal">
+  <a href="tag/tips-and-advice.html" hreflang="en">Tips and advice</a>
+</div>
+      </div>
+
+                          
+<h4  class="heading heading--">
+      
+  
+<a  class="heading__link" href="covid-19-and-gambling.html">
+<span>Support during Covid-19</span>
+</a>
+  </h4>
+                  
+<p  class="paragraph paragraph--">
+      To help make people aware of the potential impact of gambling on health and wellbeing at this time, we have published a short document with information and resources which can help ensure people are kept safe from gambling harms.
+  </p>
+            <div  class="article-teaser__footer">
+              <div  class="article-teaser__cta-wrapper">
+          
+  
+<a  class="link link--arrow" href="covid-19-and-gambling.html">
+Find out now  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+        </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+</article>
+
+          </div>
+</div>
+
+    </div>
+</div>
+
+
+<div data-block-plugin-id="inline_block:ngts_promo_panel" data-inline-block-uuid="a18cb342-ca4c-4ff9-b6a9-06404c01c0d9" class="block block-layout-builder block-inline-blockngts-promo-panel">
+  
+    
+  
+  <div class="grid-container margin-vertical-4">
+    
+<div  data-block-plugin-id="inline_block:ngts_promo_panel" data-inline-block-uuid="a18cb342-ca4c-4ff9-b6a9-06404c01c0d9" class="hero hero--warm-grey hero--badged block block-layout-builder block-inline-blockngts-promo-panel">
+  <div  class="hero__inner">
+  <div  class="hero__container">
+
+  <div  class="hero__content">
+          
+<h3  class="hero__subheading hero__subheading--">
+      Find free, confidential help that’s right for you
+  </h3>
+                  
+<p  class="body-large body-large--">
+      Whether you’re looking for treatment, advice, or you just want to talk to someone about your – or someone else’s – gambling, there’s lots of support available. 
+  </p>
+              <div  class="hero__cta-wrapper">
+        
+  
+<a  class="link link--arrow" href="finding-the-right-support.html">
+Learn more  <span><svg class="arrow-orange" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 34 14.7">
+  <path class="arrow-orange__arrowhead" d="M33.7 8.1c.4-.4.4-1 0-1.4L27.3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l5.7 5.7-5.7 5.6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l6.4-6.3z" />
+  <path class="arrow-orange__line" d="M0 6.4h33v2H0z" />
+</svg>
+</span></a>
+      </div>
+    
+  </div>
+    <div  class="badge-ngts">
+              <a href="ngts.html"><img src="themes/custom/begambleaware/images/NGTS-logo-2.png" alt="NGTS"></a>
+          </div>
+  </div>
+  </div>
+</div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+
+    </div>
+  
+
+</article>
+
+  </div>
+
+
+<div id="block-footer-ngts-call-chat-banner" data-block-plugin-id="block_content:25e54020-69a4-4a59-be8b-b610e1d81837" class="block block-block-content block-block-content25e54020-69a4-4a59-be8b-b610e1d81837">
+  
+    
+    
+<div  id="block-footer-ngts-call-chat-banner" data-block-plugin-id="block_content:25e54020-69a4-4a59-be8b-b610e1d81837" class="call-chat-banner call-chat-banner-- block block-block-content block-block-content25e54020-69a4-4a59-be8b-b610e1d81837">
+  <div  class="call-chat-banner__inner">
+    <div  class="call-chat-banner__container">
+              <div  class="call-chat-banner__left">
+                      
+<h3  class="h3 h3--">
+      
+            <div class="field field--name-field-ngts-title field--type-string field--label-hidden field__item">However you’re feeling right now, we’re here to help</div>
+      
+  </h3>
+                                <small  class="call-chat-banner__bottom-note">
+              The support is provided by the National Gambling Treatment Service. 
+            </small>
+                  </div>
+            <div  class="call-chat-banner__right">
+        <div  class="call-chat-banner__right-col call-chat-banner__right-col--first">
+          
+<h5  class="h5 h5--">
+      
+            <div class="field field--name-field-ngts-column-1-title field--type-string field--label-hidden field__item">Call</div>
+      
+  </h5>
+          
+<p  class="paragraph paragraph--">
+      
+
+            <div class="text-long"><p>I’d like to call an adviser and speak one to one for confidential advice, information and emotional support</p>
+
+<p><small>Available 24 hours a day, 7 days a week</small></p></div>
+      
+  </p>
+          <small>
+            
+          </small>
+          
+  
+<a  class="button button--alt button--large" href="tel: 0808 8020 133">
+Call 0808 8020 133</a>
+
+
+        </div>
+        <div  class="call-chat-banner__right-col call-chat-banner__right-col--second">
+          
+<h5  class="h5 h5--">
+      
+            <div class="field field--name-field-ngts-column-2-title field--type-string field--label-hidden field__item">Chat</div>
+      
+  </h5>
+          
+<p  class="paragraph paragraph--">
+      
+
+            <div class="text-long"><p>I’d like to chat online with an adviser one to one for confidential advice, information and emotional support</p>
+
+<p><small>Available 24 hours a day, 7 days a week</small></p></div>
+      
+  </p>
+          <small>
+            
+          </small>
+          
+  
+<a  class="button button--alt button--large" href="https://www.gamcare.org.uk/support-and-counselling/frontline-services/netline">
+Chat to us live</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+      </main>
+  </div>
+</div>
+
+<footer role="contentinfo"  class="layout__bottom">
+            
+<footer  class="footer__outer">
+  <div  class="footer">
+    <div  class="footer__inner">
+      <div  class="footer__left">
+          
+
+<div id="block-footer-logo" data-block-plugin-id="block_content:c6b2f44b-78ef-46fd-a4c8-4060568d0175" class="block block-block-content block-block-contentc6b2f44b-78ef-46fd-a4c8-4060568d0175">
+  
+    
+      
+            <div class="field field--name-field-logo field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/footer_logo.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+  </div>
+
+      </div>
+      <nav  class="footer__center">
+          <nav role="navigation" aria-labelledby="block-begambleaware-footer-menu" id="block-begambleaware-footer" data-block-plugin-id="system_menu_block:footer">
+            
+  <h2 class="visually-hidden" id="block-begambleaware-footer-menu">Footer menu</h2>
+  
+
+        
+
+
+    
+                              
+<ul  region="footer" class="vertical menu xmedium-horizontal" >
+      
+                    
+        
+      
+<li
+    >
+
+              <a href="contact-us.html" data-drupal-link-system-path="node/76">Contact</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="terms-of-use.html" data-drupal-link-system-path="node/449">Terms &amp; Conditions</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="acceptable-use-policy.html" data-drupal-link-system-path="node/451">Acceptable Use Policy</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="privacy-policy.html" data-drupal-link-system-path="node/454">Privacy Policy</a>
+        
+</li>
+    
+                    
+        
+      
+<li
+    >
+
+              <a href="cookie-policy.html" data-drupal-link-system-path="node/455">Cookie Policy</a>
+        
+</li>
+      </ul>
+  
+
+  </nav>
+
+      </nav>
+      <div  class="footer__right">
+          
+
+<div id="block-footersocialicons" data-block-plugin-id="block_content:3e76e9d1-af49-49c1-829b-99ba2444c3f6" class="block block-block-content block-block-content3e76e9d1-af49-49c1-829b-99ba2444c3f6">
+  
+    
+      
+<ul  class="menu social-menu">
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../twitter.com/begambleaware.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/twitter_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../www.facebook.com/BeGambleAware/index.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/facebook_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+  <li>
+
+
+
+  
+<a  class="social-icon" href="../www.instagram.com/begambleawaregb/index.html">
+
+          
+            <div class="field field--name-field-social-icon field--type-entity-reference field--label-hidden field__item"><article>
+  
+      
+            <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">  <img src="sites/default/files/2020-11/instagram_icon.svg" typeof="foaf:Image" />
+
+</div>
+      
+  </article>
+</div>
+      
+      </a>
+</li>
+</ul>
+
+  </div>
+
+        <div  class="footer__copyright">
+            
+
+<div id="block-footer-copyright" data-block-plugin-id="block_content:9c617803-9013-4d76-834e-35b9bb39d755" class="block block-block-content block-block-content9c617803-9013-4d76-834e-35b9bb39d755">
+  
+    
+      
+
+            <div class="text-long"><p>Copyright 2022 <strong>GambleAware®</strong></p></div>
+      
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </footer>
+
+  </div>
+
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/42","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"eu_cookie_compliance":{"cookie_policy_version":"1.0.0","popup_enabled":true,"popup_agreed_enabled":false,"popup_hide_agreed":false,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cp\u003EWe use cookies to optimise the use of our website, to collect analytical data and for marketing purposes\u003C\/p\u003E\n\n              \u003Ca class=\u0022find-more-button\u0022\u003Eread more here\u003C\/a\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv style=\u0022height: 60px;\u0022 id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton style=\u0022position: relative; top: calc(50% - 20%);\u0022 type=\u0022button\u0022 class=\u0022agree-button button button--alt\u0022\u003Eaccept all\u003C\/button\u003E\n              \u003Cbutton style=\u0022margin-left: 7px; position: relative; top: calc(50% - 20%);\u0022 type=\u0022button\u0022 class=\u0022decline-button button hollow\u0022\u003Eaccept necessary cookies\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022  class=\u0022eu-cookie-compliance-banner eu-cookie-compliance-banner-info eu-cookie-compliance-banner--opt-in\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \n              \u003Ca class=\u0022find-more-button\u0022\u003Eread more here\u003C\/a\u003E\n          \u003C\/div\u003E\n\n    \n    \u003Cdiv style=\u0022height: 60px;\u0022 id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton style=\u0022position: relative; top: calc(50% - 20%);\u0022 type=\u0022button\u0022 class=\u0022agree-button button button--alt\u0022\u003Eaccept all\u003C\/button\u003E\n              \u003Cbutton style=\u0022margin-left: 7px; position: relative; top: calc(50% - 20%);\u0022 type=\u0022button\u0022 class=\u0022decline-button button hollow\u0022\u003Eaccept necessary cookies\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","mobile_breakpoint":768,"popup_html_agreed":false,"popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/privacy-policy","popup_link_new_window":true,"popup_position":false,"fixed_top_position":true,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":true,"cookie_name":"f-cookies-allowed","reload_page":false,"domain":"","domain_all_sites":false,"popup_eu_only_js":false,"cookie_lifetime":100,"cookie_session":0,"set_cookie_session_zero_on_disagree":0,"disagree_do_not_show_popup":false,"method":"opt_in","automatic_cookies_removal":true,"allowed_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003EPrivacy settings\u003C\/button\u003E\n\u003Cdiv role=\u0022alertdialog\u0022 aria-labelledby=\u0022popup-text\u0022 class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info eu-cookie-compliance-content\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022 class=\u0022eu-cookie-compliance-message\u0022\u003E\n      \u003Cp\u003E\u0026lt;h2\u0026gt;We use cookies on this site to enhance your user experience\u0026lt;\/h2\u0026gt;\u0026lt;p\u0026gt;You have given your consent for us to set cookies.\u0026lt;\/p\u0026gt;\u003C\/p\u003E\n\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022 class=\u0022eu-cookie-compliance-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003EWithdraw consent\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","withdraw_enabled":false,"reload_options":0,"reload_routes_list":"","withdraw_button_on_info_popup":false,"cookie_categories":[],"cookie_categories_details":[],"enable_save_preferences_button":true,"cookie_value_disagreed":"0","cookie_value_agreed_show_thank_you":"1","cookie_value_agreed":"2","containing_element":"body","settings_tab_enabled":false,"open_by_default":true},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"ajax":[],"user":{"uid":0,"permissionsHash":"b56899d3c2e560676a756721faf73d24fecdd3cf867e54e3c0ef2ef3942502fc"}}</script>
+<script src="sites/default/files/js/js_09u_souYutt-0SrUPgcj8jSUjKSrkSGuYbOnB1y5Fns.js"></script>
+<script src="../cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+<script src="../unpkg.com/swiper%408.3.2/swiper-bundle.min.js"></script>
+<script src="sites/default/files/js/js_2AG0xKXAvewoy3Jd3d15feWPyIICUf2EV1FVXDeRW4c.js"></script>
+<script src="modules/contrib/eu_cookie_compliance/js/eu_cookie_compliance3636.js?v=1.19" defer></script>
+<script src="sites/default/files/js/js__QZoyfgDktv-NlEy3FaltSsN49p3oR7SqECQn55Tffo.js"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-f5c5a9790d5c1568162","applicationID":"514619348","transactionName":"YVBVZUYDDEFSUxJRWVgadlJACw1cHEAHX1NpVlZSXAc=","queueTime":0,"applicationTime":23,"atts":"TRdWEw4ZH08=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.begambleaware.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Aug 2022 17:20:07 GMT -->
+</html>

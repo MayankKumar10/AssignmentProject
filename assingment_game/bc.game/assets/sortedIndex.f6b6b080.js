@@ -1,0 +1,1 @@
+import{bP as i,bQ as A,bR as f}from"./index.61feb879.js";var R=4294967295,_=R>>>1;function l(e,n,b){var s=0,r=e==null?s:e.length;if(typeof n=="number"&&n===n&&r<=_){for(;s<r;){var o=s+r>>>1,t=e[o];t!==null&&!i(t)&&(b?t<=n:t<n)?s=o+1:r=o}return r}return A(e,n,f,b)}function h(e,n){return l(e,n)}export{h as s};

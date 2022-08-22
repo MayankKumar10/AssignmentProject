@@ -1,0 +1,1 @@
+import{j as n,az as o,aA as i}from"./index.61feb879.js";const p=(a=!0)=>new Promise(async(e,r)=>{if(n.google2StepAuth){const t=await o(),s=String(Date.now());e(t?{code:t,timestamp:s,verifyType:"google-2step-auth"}:null)}else a?e({code:"",timestamp:String(Date.now()),verifyType:""}):(i("/settings/safe"),e(null))});export{p as s};

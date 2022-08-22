@@ -1,0 +1,29 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 21 Aug 2022 22:39:15 at https://bc.game/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qYC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" -Y https://bc.game/ -O1 "C:\Users\Acer\Desktop\Web Development\assingment_game" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:46:27	Warning: 	file not stored in cache due to bogus state (incomplete type with Not Acceptable (200), size 0): https://github.com/orgs/bcgame-project/topics/most_used?context=overview
+22:49:33	Error: 	"Forbidden" (403) at link https://angel.co/company/bc-game-2 (from https://bc.game/)
+22:49:38	Warning: 	Note: due to https://www.begambleaware.org remote robots.txt rules, links beginning with these path will be forbidden: /core/, /profiles/, /README.txt, /web.config, /admin/, /comment/reply/, /filter/tips, /node/add/, /search/, /user/register, /user/password, /user/login, /user/logout, /index.php/admin/, /index.php/comment/reply/, /index.php/filter/tips, /index.php/node/add/, /index.php/search/, /index.php/user/password, /index.php/user/register, /index.php/user/login, /index.php/user/logout (see in the options to disable this)
+22:58:42	Warning: 	Moved Permanently for https://help.bc.game/
+22:58:42	Warning: 	File has moved from https://help.bc.game/ to /en/
+22:58:42	Warning: 	Link https://bc.game/cdn-cgi/l/email-protection not scanned (follow robots meta tag)
+22:59:13	Error: 	"Forbidden" (403) at link https://itechlabs.com/certificates/BCGame/RNG_Certificate_UK_BCGame_ITL2002455_12Oct20.pdf (from https://bc.game/)
+22:59:40	Error: 	"Not Found" (404) at link https://forum.bc.game/edge.fullstory.com/s/fs.js (from https://forum.bc.game/)
+22:59:41	Warning: 	Moved Permanently for forum.bc.game/robots.txt
+22:59:41	Warning: 	Redirected link is identical because of 'URL Hack' option: forum.bc.game/robots.txt and https://forum.bc.game/robots.txt
+22:59:41	Warning: 	Warning moved treated for forum.bc.game/robots.txt (real one is https://forum.bc.game/robots.txt)
+22:59:41	Warning: 	Moved Permanently for forum.bc.game/manifest.webmanifest/
+22:59:41	Warning: 	Redirected link is identical because of 'URL Hack' option: forum.bc.game/manifest.webmanifest/ and https://forum.bc.game/manifest.webmanifest/
+22:59:41	Warning: 	File has moved from forum.bc.game/manifest.webmanifest/ to https://forum.bc.game/manifest.webmanifest/
+23:01:25	Error: 	"Not Found" (404) at link https://forum.bc.game/document.location.href (from https://forum.bc.game/)
+23:15:07	Error: 	Exit requested by shell or user
+23:15:12	Error: 	Exit requested by shell or user
+* * MIRROR ABORTED! * *
+The current temporary cache is required for any update operation and only contains data downloaded during the present aborted session.
+The former cache might contain more complete information; if you do not want to lose that information, you have to restore it and delete the current cache.
+This can easily be done here by erasing the hts-cache/new.* files]

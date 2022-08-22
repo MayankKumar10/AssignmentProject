@@ -1,0 +1,39 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+t.me	TRUE	/	FALSE	1999999999	stel_ssid	7e03c363ff36864c2a_16821169882049507866
+t.me	TRUE	/	FALSE	1999999999	samesite	None
+forum.bc.game	TRUE	/	FALSE	1999999999	ips4_IPSSessionFront	eojsquti5pkn603m6j8fmd3o6n
+medium.com	TRUE	/	FALSE	1999999999	sid	1:X4JFgtFGyzG+PU31Lde2oZAFafN/NJG4gcougSev/VUuLLZ0fAhv2HOgCdJzg2My
+medium.com	TRUE	/	FALSE	1999999999	uid	lo_df834305bf09
+github.com	TRUE	/	FALSE	1999999999	_octo	GH1.1.403787952.1661101778
+github.com	TRUE	/	FALSE	1999999999	logged_in	no
+discord.com	TRUE	/	FALSE	1999999999	__dcfduid	0c9d45f0217411edbbf1b31597db0b83
+discord.com	TRUE	/	FALSE	1999999999	__sdcfduid	0c9d45f1217411edbbf1b31597db0b838b6a7d08a97405cacc79612e4fc34935e61ec1022dd76d66ce588cf871ed32e5
+discord.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+bitcointalk.org	TRUE	/	FALSE	1999999999	sessionid	llm3am5hhj7etp7hguiq55rd8djjara6
+forum.bc.game	TRUE	/	FALSE	1999999999	ips4_forum_list_view	list
+.medium.com	TRUE	/	FALSE	1999999999	__cfruid	b8eb9b18b031e9385fbc5bfbe06aa34e0cb82b02-1661102135
+medium.com	TRUE	/	FALSE	1999999999	SameSite	None
+github.com	TRUE	/	FALSE	1999999999	_device_id	8113421a1b6ee8ecc5b05beb32b15bd6
+github.com	TRUE	/	FALSE	1999999999	_gh_sess	%2FAa5dXk%2F700do10bEgTEZIvyvyvySGMR1dwF8fxZKLSoLhMY3fLRpCptN1%2B4HUfFENAC3hhxyEIfGhSZD93sfqWgLyTiY2vC4GcbJE9PEazvLLwFHkYt959r0zHeD8wI4rC5%2Fei0YdtlqVdSvjTnql6FmXh94BT0qVhOYurwUCbO0dIQJ7xr4kyLVN5QVd91I0QXwPZn7dfLQR4E3VL9Chkplhp41XArvLjvlEm3XSdNCjOAhlTrf6saaEBQrSmfcWxTVYeI59WHLJ5qTeCOOw%3D%3D--uPP8ZXMBHQWrUlX9--mWmNbqF%2BJWzeXhCWGqqvNA%3D%3D
+github.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+.twitter.com	TRUE	/	FALSE	1999999999	ct0	ad7a8698f1a56a2d0f669923fcd9e10e
+twitter.com	TRUE	/	FALSE	1999999999	cms-csp-nonce	91c50c844aa28ea1fb0752d13376753
+.facebook.com	TRUE	/	FALSE	1999999999	fr	0Mu6RQ0KzLSpmV4WD..BjAmi5.u3.AAA.0.0.BjAmjC.AWXbFhZ5yFY
+.angel.co	TRUE	/	FALSE	1999999999	datadome	.-O4bFmN0D53~Yz2cfjzLwGxm~BHPVkL46~wYYO0x9enSG.N-soa~OLyZLNAn6PIQErZ27_XpsL-eAN6MPMVMeywqIE3vvWOE40-a18Jdby1rHuPSDOZeTXxg6e~.RIl
+.angel.co	TRUE	/	FALSE	1999999999	__cf_bm	dURP6yFZKCdhX_qJh.6HRsY3E65ahkqQ8zlIKq5AGD4-1661102373-0-AWCxRWTfDFnXs883SiKT+DEpEZ0BA/8+EexBqLBxN+6TrdSTm/xS26bvi5X9zAOFRuVwDQU7iMu/UEtejyMWgJA=
+angel.co	TRUE	/	FALSE	1999999999	SameSite	None
+.instagram.com	TRUE	/	FALSE	1999999999	ig_did	0D2A0FD6-DA18-4446-9DE9-2759D1E60BA4
+.instagram.com	TRUE	/	FALSE	1999999999	ig_nrcb	1
+.coingecko.com	TRUE	/	FALSE	1999999999	__cf_bm	I.44huGsP0t0t86U6PXiHlzsCQEV11o6SNuJfiUjE2U-1661102478-0-AdDT/ydQKR7goMBxTZHIByaJh+zzLolgdIoSyAzu93GJraLVpqKK4gT5JC9kBYzI3D+Mw7YC4h3VUDqAB5Uwauo=
+assets.coingecko.com	TRUE	/	FALSE	1999999999	SameSite	None
+cryptogambling.org	TRUE	/	FALSE	1999999999	PHPSESSID	hcaof8cidrbj9qi8eiskd12r4c
+forum.bc.game	TRUE	/	FALSE	1999999999	ips4_stream_view_all	expanded
+forum.bc.game	TRUE	/	FALSE	1999999999	ips4_lastSearch	1661103054
+forum.bc.game	TRUE	/	FALSE	1999999999	ips4_noCache	1
+.twitter.com	TRUE	/	FALSE	1999999999	guest_id_marketing	v1%3A166110390464533903
+.twitter.com	TRUE	/	FALSE	1999999999	guest_id_ads	v1%3A166110390464533903
+.twitter.com	TRUE	/	FALSE	1999999999	personalization_id	v1_kwI+EjUp0dwzKmqgollsNw=="
+.twitter.com	TRUE	/	FALSE	1999999999	guest_id	v1%3A166110390464533903
+twitter.com	TRUE	/	FALSE	1999999999	SameSite	None
+

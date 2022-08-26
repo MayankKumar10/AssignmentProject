@@ -1,0 +1,18 @@
+<svg width="87" height="139" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient cx="50%" cy="36.063%" fx="50%" fy="36.063%" r="160.176%" gradientTransform="matrix(0 .62312 -1 0 .86 .05)" id="c">
+      <stop stop-color="#FFB83B" offset="0%"/>
+      <stop stop-color="#F3582E" offset="100%"/>
+    </radialGradient>
+    <linearGradient x1="49.416%" y1="0%" x2="50%" y2="100%" id="a">
+      <stop stop-color="#F98935" offset="0%"/>
+      <stop stop-color="#FA8734" offset="52.511%"/>
+      <stop stop-color="#F87D33" offset="100%"/>
+    </linearGradient>
+    <path d="M5.309 1.124H81.69a4.439 4.439 0 014.439 4.439v122.115a4.439 4.439 0 01-3.774 4.39L43.5 137.95l-38.856-5.884a4.439 4.439 0 01-3.774-4.389V5.563a4.439 4.439 0 014.439-4.44z" id="b"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M87 128.84c0 2.2-1.612 4.07-3.789 4.391l-38.196 5.652a8.878 8.878 0 01-2.586.002l-38.634-5.658A4.439 4.439 0 010 128.835V5.327A5.327 5.327 0 015.327 0h76.346A5.327 5.327 0 0187 5.327z" fill="url(#a)"/>
+    <use fill="url(#c)" xlink:href="#b"/>
+  </g>
+</svg>

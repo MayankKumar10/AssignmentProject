@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <script type="module">var __vite_is_dynamic_import_support=false;</script>
+  
+    <script type="module">
+    try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;
+    </script>
+    
+    <script type="module">
+    !function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();
+    </script>
+
+<script type="module" src="../src/scripts/polyfills-modern.a6bcf643.js"></script>
+<script type="module" crossorigin="" src="../src/scripts/index.61feb879.js"></script>
+
+<script type="module">var __vite_is_dynamic_import_support=false;</script>
+
+<script type="module">
+try{import("_").catch(()=>1);}catch(e){}window.__vite_is_dynamic_import_support=true;
+</script>
+
+<script type="module">
+!function(){if(window.__vite_is_dynamic_import_support)return;console.warn("vite: loading legacy build because dynamic import is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();
+</script>
+
+
+<link rel="modulepreload" as="script" crossorigin="" href="../src/scripts/index.1b0aa07c.js">
+<link rel="modulepreload" as="script" crossorigin="" href="../src/scripts/GameGridList.6466e9db.js">
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script>
+      var root = document.getElementById("root");
+      const cl = root.classList;
+      var isDarken = !Boolean(localStorage.getItem("isBrighten"));
+      isDarken && document.body.classList.add("darken");
+      const ms = window.innerWidth < 660;
+      const rms = cl.contains('hide-p');
+      if (navigator.webdriver) {
+        cl.add(ms ? 'hide-p' : 'hide-m');
+      } else {
+        cl.remove('hide-m', 'hide-p');
+        if (ms!==rms) { root.innerHTML = '<div id="initloading"><img src="/img/init/' + (isDarken ? "d" : "l") + (Date.now() % 4) + '.png" /></div>'; };
+      }
+    </script>
+    
+    <script nomodule="">!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule="" id="vite-legacy-polyfill" src="../src/scripts/polyfills-legacy.09d016e6.js"></script>
+    <script nomodule="" id="vite-legacy-entry" data-src="../src/scripts/index-legacy.ba64a58b.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  
+<svg style={{position: "absolute", width: "0", height: "0", overflow: "hidden"}}>
+  <defs id="tint-container"><filter id="tint-555c66" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.33 0 0 0 0 0.36 0 0 0 0 0.40 0 0 0 1 0"></feColorMatrix></filter><filter id="tint-aeb2c2" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0 0 0 0 0.68 0 0 0 0 0.70 0 0 0 0 0.76 0 0 0 1 0"></feColorMatrix></filter></defs></svg>
+  </body>
+</html>
